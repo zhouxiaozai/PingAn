@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>图片多行文字混合垂直居中</title>
+    <style>
+        body,h3{
+            margin:0;
+            padding:0;
+        }
+    .logo_left{
+        height:90px;
+        font-size:26px;
+    }
+    .logo_left img{
+        float:left;
+        margin-top:29px;
+        margin-left:30px;
+    }
+    .logo_left h3{
+        float:left;
+        line-height:90px;
+    }
+    .logo_left_test{
+        height:90px;
+        display:table-cell;
+        vertical-align:middle;
+    }
+    .logo_left_test span{
+        display:inline-block;
+        font-size:12px;
+    }
+    </style>
+</head>
+<body>
+<div class="logo_left">
+    <img src="images/logo.png" width="30" height="32">
+    <h3>保险</h3>
+
+    <div class="logo_left_test">
+                       <span>选平安,<br>
+                       您拥有的不只是保险
+                       </span>
+    </div>
+</div>
+</body>
+</html>
